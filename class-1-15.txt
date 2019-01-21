@@ -1,0 +1,48 @@
+1001101
+1.011
+
+99
+.1
+parseInt(binary, 2);
+(decimal).toString(2);
+
+var max = 0;
+var count = 0;
+while (count < 2){
+	card=(Math.floor(Math.random() * (+13 - +1)) + +1);
+	console.log(card);
+	if (max < card) {
+		max = card;
+	}
+count++
+};
+
+pieSize=13;
+pieCost=16.99;
+pieSurface=pieSize*3.14**2;
+pieValue=Math.round(1000*(pieCost/pieSurface))/1000;
+
+firstName = "Steve";
+lastName = "Dave";
+streetAddress = "321 Countdown Ave";
+city = "Townsville";
+state = "PN";
+zipCode = "12345";
+
+blockAddress = firstName + " " + lastName + "\n" + streetAddress + "\n" + city +  ", " + state + " " + zipCode;
+
+addressLines=blockAddress.split("\n");
+recoveredFirstName=addressLines[0].split(" ")[0];
+recoveredLastName=addressLines[0].split(" ")[1];
+recoveredStreetAddress=addressLines[1];
+recoveredCity=addressLines[2].split(",")[0];
+recoveredZip=addressLines[2].split(" ").pop();
+recoveredState=addressLines[2].split(",")[1].replace(recoveredZip,'');
+
+
+
+startDate=new Date(2019,0,1);
+endDate = new Date(2019,3,1);
+
+middleDateAsTime=(Date.parse(startDate) + Date.parse(endDate))/2;
+middleDate=Date.setTime(middleDateAsTime);
