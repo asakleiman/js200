@@ -45,4 +45,4 @@ startDate=new Date(2019,0,1);
 endDate = new Date(2019,3,1);
 
 middleDateAsTime=(Date.parse(startDate) + Date.parse(endDate))/2;
-middleDate=Date.setTime(middleDateAsTime);
+middleDate=Date(middleDateAsTime);
